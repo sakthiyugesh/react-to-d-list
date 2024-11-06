@@ -12,7 +12,7 @@ const Homelist = () => {
   }, []);
 
   let getNotes = async () => {
-    let response = await axios.get("http://127.0.0.1:8000/api/lists/");
+    let response = await axios.get("api/lists/");
     setLists(response.data);
   };
 
