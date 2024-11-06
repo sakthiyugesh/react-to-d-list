@@ -10,7 +10,7 @@ const Header = ({ getnotes }) => {
 
   let postData = async () => {
     try {
-      await axios.post("http://127.0.0.1:8000/api/lists/", newTasks);
+      await axios.post("https://django-react-to-do-list-3.onrender.com/api/lists/", newTasks);
       getnotes();
       setnewTasks("");
       addTaskcon.value = "";

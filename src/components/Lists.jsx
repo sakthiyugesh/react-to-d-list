@@ -6,7 +6,7 @@ const Lists = ({ list, index, getNote }) => {
 
   let deleteData = async (id) => {
     try {
-      await axios.delete(`http://127.0.0.1:8000/api/lists/${id}`);
+      await axios.delete(`https://django-react-to-do-list-3.onrender.com/api/lists/${id}`);
       getNote();
     } catch (e) {
       console.log(e);
@@ -15,7 +15,7 @@ const Lists = ({ list, index, getNote }) => {
 
   let editData = async (id) => {
     try {
-      await axios.patch(`http://127.0.0.1:8000/api/lists/${id}`, newTasks);
+      await axios.patch(`https://django-react-to-do-list-3.onrender.com/api/lists/${id}`, newTasks);
       console.log(newTasks);
     } catch (e) {
       console.log(e);

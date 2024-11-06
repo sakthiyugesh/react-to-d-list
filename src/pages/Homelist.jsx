@@ -12,7 +12,7 @@ const Homelist = () => {
   }, []);
 
   let getNotes = async () => {
-    let response = await axios.get("api/lists/");
+    let response = await axios.get("https://django-react-to-do-list-3.onrender.com/api/lists/");
     setLists(response.data);
   };
 
